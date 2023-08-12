@@ -14,4 +14,3 @@
 - - both are done being split, time to merge through comparison
 - - eventually the merged array is returned to its previous recursion and does so until we get back the top
 
-
