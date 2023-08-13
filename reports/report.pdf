@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="29" failures="0" errors="0" time="0.653">
+  <testsuite name="LinkedList Creation" errors="0" failures="0" skipped="0" timestamp="2023-08-13T00:04:48" time="0.613" tests="29">
+    <testcase classname="LinkedList Creation should create linkedlist" name="LinkedList Creation should create linkedlist" time="0.002">
+    </testcase>
+    <testcase classname="LinkedList Append should add one value into empty list" name="LinkedList Append should add one value into empty list" time="0.002">
+    </testcase>
+    <testcase classname="LinkedList Append should add a value into list with one value" name="LinkedList Append should add a value into list with one value" time="0.002">
+    </testcase>
+    <testcase classname="LinkedList Append should add a value into list with multiple values" name="LinkedList Append should add a value into list with multiple values" time="0.016">
+    </testcase>
+    <testcase classname="LinkedList Prepend should add a value into empty list" name="LinkedList Prepend should add a value into empty list" time="0.001">
+    </testcase>
+    <testcase classname="LinkedList Prepend should prepend value into list with one value" name="LinkedList Prepend should prepend value into list with one value" time="0.001">
+    </testcase>
+    <testcase classname="LinkedList Prepend should prepend value into list with multiple values" name="LinkedList Prepend should prepend value into list with multiple values" time="0.001">
+    </testcase>
+    <testcase classname="LinkedList Pop should return null if empty list" name="LinkedList Pop should return null if empty list" time="0">
+    </testcase>
+    <testcase classname="LinkedList Pop should return a node if list contains a node" name="LinkedList Pop should return a node if list contains a node" time="0.001">
+    </testcase>
+    <testcase classname="LinkedList Pop should return a node if list contains nodes" name="LinkedList Pop should return a node if list contains nodes" time="0.003">
+    </testcase>
+    <testcase classname="LinkedList Pop should return a node if list contains nodes(string version))" name="LinkedList Pop should return a node if list contains nodes(string version))" time="0.002">
+    </testcase>
+    <testcase classname="LinkedList Size should return size 0 on empty" name="LinkedList Size should return size 0 on empty" time="0">
+    </testcase>
+    <testcase classname="LinkedList Size should return size 1 on list with one value" name="LinkedList Size should return size 1 on list with one value" time="0">
+    </testcase>
+    <testcase classname="LinkedList Size should return size 4 on list" name="LinkedList Size should return size 4 on list" time="0">
+    </testcase>
+    <testcase classname="LinkedList Head should return null on empty list" name="LinkedList Head should return null on empty list" time="0">
+    </testcase>
+    <testcase classname="LinkedList Head should return head on list with values" name="LinkedList Head should return head on list with values" time="0">
+    </testcase>
+    <testcase classname="LinkedList Head should return correct head after pop" name="LinkedList Head should return correct head after pop" time="0.001">
+    </testcase>
+    <testcase classname="LinkedList Tail should return null on empty list" name="LinkedList Tail should return null on empty list" time="0">
+    </testcase>
+    <testcase classname="LinkedList Tail should return tail on list with values" name="LinkedList Tail should return tail on list with values" time="0">
+    </testcase>
+    <testcase classname="LinkedList Tail should return correc tail after pop" name="LinkedList Tail should return correc tail after pop" time="0.001">
+    </testcase>
+    <testcase classname="LinkedList At should return null at empty list" name="LinkedList At should return null at empty list" time="0">
+    </testcase>
+    <testcase classname="LinkedList At should return node with value 1" name="LinkedList At should return node with value 1" time="0">
+    </testcase>
+    <testcase classname="LinkedList At should return node with value 2" name="LinkedList At should return node with value 2" time="0.001">
+    </testcase>
+    <testcase classname="LinkedList Contains should return false at empty list" name="LinkedList Contains should return false at empty list" time="0">
+    </testcase>
+    <testcase classname="LinkedList Contains should find value and return true with a list of values" name="LinkedList Contains should find value and return true with a list of values" time="0">
+    </testcase>
+    <testcase classname="LinkedList Contains should not find value and return false" name="LinkedList Contains should not find value and return false" time="0">
+    </testcase>
+    <testcase classname="LinkedList Find should return null at empty list" name="LinkedList Find should return null at empty list" time="0">
+    </testcase>
+    <testcase classname="LinkedList Find should find value and return index 1 with a list of values" name="LinkedList Find should find value and return index 1 with a list of values" time="0">
+    </testcase>
+    <testcase classname="LinkedList Find should not find value and return null" name="LinkedList Find should not find value and return null" time="0">
+    </testcase>
+  </testsuite>
+</testsuites>
