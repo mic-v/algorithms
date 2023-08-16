@@ -145,11 +145,9 @@ export class LinkedList {
         let node = this.head;
         let string = "";
         while(node != null) {
-            //console.log(node);
             string+= "( " + node.value + " ) -> ";
             node = node.nextNode;
         }    
-        console.log("yo");
         string+= "null";
         return string;
     }
