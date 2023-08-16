@@ -1,5 +1,5 @@
 
-const prettyPrint = (node, prefix = "", isLeft = true) => {
+export const prettyPrint = (node, prefix = "", isLeft = true) => {
     if (node === null) {
       return;
     }
@@ -36,6 +36,8 @@ export class BST {
         if(!arr || arr.length === 0) 
             return null;
         var copy = copy || arr.slice();
+        //remove duplicates;
+        copy = [...new Set(arr)];
 
         //Pick a middle value from the array as root
         let mid = Math.floor(copy.length / 2);
@@ -350,6 +352,8 @@ export class BST {
     }
 }
 
+/*
+
 let array = [1,2,3,4,5];
 
 let bst = new BST(array);
@@ -364,3 +368,5 @@ console.log(bst.isBalanced(bst.root));
 bst.rebalance();
 prettyPrint(bst.root);
 console.log(bst.isBalanced(bst.root));
+
+ */

@@ -94,7 +94,6 @@ export class LinkedList {
             return node;
         }
         while(node != null) {
-            console.log(node);
             if(node.nextNode === this.tail) {
                 let temp = this.tail;
                 this.tail = null;
@@ -158,5 +157,3 @@ export class LinkedList {
 let list = new LinkedList();
 list.append("42");
 list.prepend(10);
-console.log(list.toString());
-console.log(list.pop().value);
