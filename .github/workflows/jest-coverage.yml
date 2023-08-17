@@ -4,6 +4,9 @@ on:
         branches:
             - master
             - main
+            - develop
+            - workflow
+
 jobs:
     coverage:
         permissions: write-all
@@ -12,7 +15,7 @@ jobs:
             working-directory: ./data_structures/linkedlist
             test-script: npm test
             annotations: none
-            output: report-markdown
+            ouput: markdown
         steps:
             - uses: actions/checkout@v3
             - uses: ArtiomTr/jest-coverage-report-action@v2
