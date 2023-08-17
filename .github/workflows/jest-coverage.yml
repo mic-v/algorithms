@@ -15,7 +15,7 @@ jobs:
             working-directory: ./data_structures/linkedlist
             test-script: npm test
             annotations: none
-            ouput: markdown
+            output: markdown
         steps:
             - uses: actions/checkout@v3
             - uses: ArtiomTr/jest-coverage-report-action@v2
