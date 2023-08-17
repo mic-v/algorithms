@@ -1,63 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="29" failures="0" errors="0" time="0.532">
-  <testsuite name="LinkedList Creation" errors="0" failures="0" skipped="0" timestamp="2023-08-13T00:00:35" time="0.502" tests="29">
-    <testcase classname="LinkedList Creation should create linkedlist" name="LinkedList Creation should create linkedlist" time="0.002">
+<testsuites name="jest tests" tests="17" failures="0" errors="0" time="0.543">
+  <testsuite name="BST Creation" errors="0" failures="0" skipped="0" timestamp="2023-08-17T02:30:04" time="0.512" tests="17">
+    <testcase classname="BST Creation should create bst that is empty" name="BST Creation should create bst that is empty" time="0.002">
     </testcase>
-    <testcase classname="LinkedList Append should add one value into empty list" name="LinkedList Append should add one value into empty list" time="0.002">
+    <testcase classname="BST Creation should create bst with a root" name="BST Creation should create bst with a root" time="0">
     </testcase>
-    <testcase classname="LinkedList Append should add a value into list with one value" name="LinkedList Append should add a value into list with one value" time="0.001">
+    <testcase classname="BST Creation should create a balanced bst" name="BST Creation should create a balanced bst" time="0.001">
     </testcase>
-    <testcase classname="LinkedList Append should add a value into list with multiple values" name="LinkedList Append should add a value into list with multiple values" time="0.001">
+    <testcase classname="BST Creation should create a balanced bst(big sets)" name="BST Creation should create a balanced bst(big sets)" time="0.021">
     </testcase>
-    <testcase classname="LinkedList Prepend should add a value into empty list" name="LinkedList Prepend should add a value into empty list" time="0.001">
+    <testcase classname="BST Order (BST functions mostly iterative, helper is recursion) should print in order same as helper inorder function" name="BST Order (BST functions mostly iterative, helper is recursion) should print in order same as helper inorder function" time="0.001">
     </testcase>
-    <testcase classname="LinkedList Prepend should prepend value into list with one value" name="LinkedList Prepend should prepend value into list with one value" time="0.002">
+    <testcase classname="BST Order (BST functions mostly iterative, helper is recursion) should print in order same as helper inorder function(large sets)" name="BST Order (BST functions mostly iterative, helper is recursion) should print in order same as helper inorder function(large sets)" time="0.006">
     </testcase>
-    <testcase classname="LinkedList Prepend should prepend value into list with multiple values" name="LinkedList Prepend should prepend value into list with multiple values" time="0.001">
+    <testcase classname="BST Order (BST functions mostly iterative, helper is recursion) should print in order same as helper inorder function(large sets)" name="BST Order (BST functions mostly iterative, helper is recursion) should print in order same as helper inorder function(large sets)" time="0.004">
     </testcase>
-    <testcase classname="LinkedList Pop should return null if empty list" name="LinkedList Pop should return null if empty list" time="0">
+    <testcase classname="BST Order (BST functions mostly iterative, helper is recursion) should print level order same as helper level order" name="BST Order (BST functions mostly iterative, helper is recursion) should print level order same as helper level order" time="0.001">
     </testcase>
-    <testcase classname="LinkedList Pop should return a node if list contains a node" name="LinkedList Pop should return a node if list contains a node" time="0">
+    <testcase classname="BST Order (BST functions mostly iterative, helper is recursion) should print level order same as helper level order(duplicates)" name="BST Order (BST functions mostly iterative, helper is recursion) should print level order same as helper level order(duplicates)" time="0">
     </testcase>
-    <testcase classname="LinkedList Pop should return a node if list contains nodes" name="LinkedList Pop should return a node if list contains nodes" time="0.027">
+    <testcase classname="BST Order (BST functions mostly iterative, helper is recursion) should print level order same as helper level order(even bigger set)" name="BST Order (BST functions mostly iterative, helper is recursion) should print level order same as helper level order(even bigger set)" time="0.009">
     </testcase>
-    <testcase classname="LinkedList Pop should return a node if list contains nodes(string version))" name="LinkedList Pop should return a node if list contains nodes(string version))" time="0.001">
+    <testcase classname="BST Order (BST functions mostly iterative, helper is recursion) should print preorder same as preorder helper" name="BST Order (BST functions mostly iterative, helper is recursion) should print preorder same as preorder helper" time="0.001">
     </testcase>
-    <testcase classname="LinkedList Size should return size 0 on empty" name="LinkedList Size should return size 0 on empty" time="0.001">
+    <testcase classname="BST Order (BST functions mostly iterative, helper is recursion) should print preorder same as preorder helper(slightly bigger)" name="BST Order (BST functions mostly iterative, helper is recursion) should print preorder same as preorder helper(slightly bigger)" time="0">
     </testcase>
-    <testcase classname="LinkedList Size should return size 1 on list with one value" name="LinkedList Size should return size 1 on list with one value" time="0">
+    <testcase classname="BST Order (BST functions mostly iterative, helper is recursion) should print preorder same as preorder helper(even bigger)" name="BST Order (BST functions mostly iterative, helper is recursion) should print preorder same as preorder helper(even bigger)" time="0.004">
     </testcase>
-    <testcase classname="LinkedList Size should return size 4 on list" name="LinkedList Size should return size 4 on list" time="0">
+    <testcase classname="BST Order (BST functions mostly iterative, helper is recursion) should print postorder same as postorder helper" name="BST Order (BST functions mostly iterative, helper is recursion) should print postorder same as postorder helper" time="0.001">
     </testcase>
-    <testcase classname="LinkedList Head should return null on empty list" name="LinkedList Head should return null on empty list" time="0">
+    <testcase classname="BST Order (BST functions mostly iterative, helper is recursion) should print postorder same as postorder helper(slightly bigger)" name="BST Order (BST functions mostly iterative, helper is recursion) should print postorder same as postorder helper(slightly bigger)" time="0.001">
     </testcase>
-    <testcase classname="LinkedList Head should return head on list with values" name="LinkedList Head should return head on list with values" time="0">
+    <testcase classname="BST Order (BST functions mostly iterative, helper is recursion) should print postorder same as postorder helper(slightly bigger)" name="BST Order (BST functions mostly iterative, helper is recursion) should print postorder same as postorder helper(slightly bigger)" time="0">
     </testcase>
-    <testcase classname="LinkedList Head should return correct head after pop" name="LinkedList Head should return correct head after pop" time="0.001">
-    </testcase>
-    <testcase classname="LinkedList Tail should return null on empty list" name="LinkedList Tail should return null on empty list" time="0">
-    </testcase>
-    <testcase classname="LinkedList Tail should return tail on list with values" name="LinkedList Tail should return tail on list with values" time="0.001">
-    </testcase>
-    <testcase classname="LinkedList Tail should return correc tail after pop" name="LinkedList Tail should return correc tail after pop" time="0.001">
-    </testcase>
-    <testcase classname="LinkedList At should return null at empty list" name="LinkedList At should return null at empty list" time="0">
-    </testcase>
-    <testcase classname="LinkedList At should return node with value 1" name="LinkedList At should return node with value 1" time="0">
-    </testcase>
-    <testcase classname="LinkedList At should return node with value 2" name="LinkedList At should return node with value 2" time="0">
-    </testcase>
-    <testcase classname="LinkedList Contains should return false at empty list" name="LinkedList Contains should return false at empty list" time="0">
-    </testcase>
-    <testcase classname="LinkedList Contains should find value and return true with a list of values" name="LinkedList Contains should find value and return true with a list of values" time="0.001">
-    </testcase>
-    <testcase classname="LinkedList Contains should not find value and return false" name="LinkedList Contains should not find value and return false" time="0">
-    </testcase>
-    <testcase classname="LinkedList Find should return null at empty list" name="LinkedList Find should return null at empty list" time="0">
-    </testcase>
-    <testcase classname="LinkedList Find should find value and return index 1 with a list of values" name="LinkedList Find should find value and return index 1 with a list of values" time="0">
-    </testcase>
-    <testcase classname="LinkedList Find should not find value and return null" name="LinkedList Find should not find value and return null" time="0">
+    <testcase classname="BST Order (BST functions mostly iterative, helper is recursion) should print postorder same as postorder helper(even bigger)" name="BST Order (BST functions mostly iterative, helper is recursion) should print postorder same as postorder helper(even bigger)" time="0.003">
     </testcase>
   </testsuite>
 </testsuites>
