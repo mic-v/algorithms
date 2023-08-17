@@ -183,6 +183,7 @@ export class BST {
      * @returns return arr
      */
     levelOrder(callback) {
+        if(this.root === null) return [];
         let queue = [];
         let arr = [];
         let curr = this.root;
@@ -208,6 +209,7 @@ export class BST {
      * @returns array of values in order
      */
     inorder(callback) {
+        if(this.root === null) return [];
         let stack = [];
         let arr = [];
         let curr = this.root;
@@ -234,6 +236,7 @@ export class BST {
      * @returns array of values in preorder
      */
     preorder(callback) {
+        if(this.root === null) return [];
         let stack = [];
         let arr = [];
         let curr = this.root;
@@ -253,21 +256,20 @@ export class BST {
     }
 
     postorder(callback) {
+        if(this.root === null) return [];
         let stack = [];
-
         let arr = [];
-        let prev = null;
         let curr = this.root;
-        let track = 0;
         stack.push(curr);
 
-        while(stack.length !== 0) {
+        while(stack.length > 0) {
             curr = stack[stack.length - 1];
             stack.pop();
             callback ?  callback(curr) : arr.unshift(curr.value);
 
             if(curr.left)  stack.push(curr.left);
             if(curr.right) stack.push(curr.right);
+        
         }
 
         if(!callback) return arr;

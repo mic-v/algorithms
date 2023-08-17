@@ -50,11 +50,21 @@ const levelorder = (root) => {
 
 
 const preorder = (root) => {
-
+    if(root === null) return [];
+    if(root.left === null && root.right === null) return [root.value];
+    
+    let left = preorder(root.left);
+    let right = preorder(root.right);
+    return [root.value, ...left, ...right];
 }
 
 const postorder = (root) => {
-
+    if(root === null) return [];
+    if(root.left === null && root.right === null) return [root.value];
+    
+    let left = postorder(root.left);
+    let right = postorder(root.right);
+    return [...left, ...right, root.value];
 }
 
 
@@ -145,6 +155,69 @@ describe("BST Order (BST functions mostly iterative, helper is recursion)", () =
         expect(bst.levelOrder()).toStrictEqual(levelorder(bst.root));
         bst = new BST(three);
         expect(bst.levelOrder()).toStrictEqual(levelorder(bst.root));
+    });
+
+
+    it("should print preorder same as preorder helper", () => {
+        let bst = new BST([1,2,3]);
+        expect(bst.preorder()).toStrictEqual(preorder(bst.root));
+        bst = new BST([1,2,3,4,5]);
+        expect(bst.preorder()).toStrictEqual(preorder(bst.root));
+
+        bst = new BST([1,2]);
+        expect(bst.preorder()).toStrictEqual(preorder(bst.root));
+    });
+
+    it("should print preorder same as preorder helper(slightly bigger)", () => {
+        let bst = new BST([1,2,3,50,75,100,120,121,200]);
+        expect(bst.preorder()).toStrictEqual(preorder(bst.root));
+    });
+
+    it("should print preorder same as preorder helper(even bigger)", () => {
+        let bst = new BST(one);
+        expect(bst.preorder()).toStrictEqual(preorder(bst.root));
+        bst = new BST(two);
+        expect(bst.preorder()).toStrictEqual(preorder(bst.root));
+        bst = new BST(three);
+        expect(bst.preorder()).toStrictEqual(preorder(bst.root));
+        
+    });
+
+    it("should print postorder same as postorder helper", () => {
+        let bst = new BST([]);
+        expect(bst.postorder()).toStrictEqual(postorder(bst.root));
+        bst = new BST([1,2]);
+        expect(bst.postorder()).toStrictEqual(postorder(bst.root));
+        bst = new BST([1,2,4,5,6]);
+        expect(bst.postorder()).toStrictEqual(postorder(bst.root));
+        
+    });
+
+    it("should print postorder same as postorder helper(slightly bigger)", () => {
+        let bst = new BST([]);
+        expect(bst.postorder()).toStrictEqual(postorder(bst.root));
+        bst = new BST([1,2]);
+        expect(bst.postorder()).toStrictEqual(postorder(bst.root));
+        bst = new BST([1,2,4,5,6]);
+        expect(bst.postorder()).toStrictEqual(postorder(bst.root));
+        
+    });
+
+    it("should print postorder same as postorder helper(slightly bigger)", () => {
+        let bst = new BST([10,11,12,13,14,15,16,17,20]);
+        expect(bst.postorder()).toStrictEqual(postorder(bst.root));
+        bst = new BST([2,10,11,15,20,24,24,50,52]);
+        expect(bst.postorder()).toStrictEqual(postorder(bst.root));
+        
+    });
+
+    it("should print postorder same as postorder helper(even bigger)", () => {
+        let bst = new BST(one);
+        expect(bst.postorder()).toStrictEqual(postorder(bst.root));
+        bst = new BST(two);
+        expect(bst.postorder()).toStrictEqual(postorder(bst.root));
+        bst = new BST(three);
+        expect(bst.postorder()).toStrictEqual(postorder(bst.root));
     });
 
 
